@@ -13,15 +13,25 @@ export function AboutSection() {
       <div className="mx-auto grid w-full max-w-6xl gap-8 px-4 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-8">
         {/* Visual */}
         <div className="lg:col-span-5">
-          <div className="relative h-64 overflow-hidden rounded-2xl border border-zinc-200 bg-white sm:h-80">
-            <Image src="/images/finish-lines.svg" alt="Détails de finitions intérieures" fill className="object-cover" />
+          <div className="relative h-64 overflow-hidden rounded-2xl border border-zinc-200 bg-zinc-100 sm:h-80">
+            <Image
+              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900&q=80"
+              alt="Intérieur rénové avec finitions soignées"
+              fill
+              className="object-cover"
+            />
+            {/* Badge flottant */}
+            <div className="absolute bottom-3 left-3 flex items-center gap-2 rounded-full border border-white/30 bg-zinc-950/80 px-3 py-1.5 backdrop-blur-sm">
+              <span className="h-2 w-2 rounded-full bg-amber-400" />
+              <span className="text-xs font-semibold text-white">Rénovation intérieure</span>
+            </div>
           </div>
           {/* Pillar chips */}
           <div className="mt-4 flex flex-wrap gap-2">
             {pillars.map((p) => (
               <span
                 key={p.label}
-                className="rounded-full border border-zinc-300 bg-white px-3 py-1 text-xs font-medium text-zinc-700"
+                className="rounded-full border border-zinc-900 bg-zinc-950 px-3 py-1 text-xs font-medium text-white"
               >
                 {p.label}
               </span>

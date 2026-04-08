@@ -1,20 +1,54 @@
 import { company } from "@/data/site";
+import { MapPin, Phone } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-zinc-950 py-10 text-zinc-300">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 sm:px-6 lg:px-8 md:flex-row md:items-end md:justify-between">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-wide text-zinc-400">{company.name}</p>
-          <p className="mt-2 text-sm">Plâtrerie · Peinture · Finition</p>
-          <p className="text-sm">{company.area}</p>
+    <footer className="bg-zinc-950 pt-12 pb-8 text-zinc-400">
+      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-8 border-b border-white/10 pb-10 md:grid-cols-3">
+          {/* Brand */}
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-zinc-500">Entreprise locale</p>
+            <p className="mt-2 text-lg font-semibold text-white">{company.name}</p>
+            <p className="mt-1 text-sm">Plâtrerie · Peinture · Finition</p>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-zinc-500">Contact</p>
+            <a
+              href={`tel:${company.phoneRaw}`}
+              className="mt-2 inline-flex items-center gap-2 text-sm font-medium text-zinc-200 hover:text-white"
+            >
+              <Phone className="h-4 w-4 text-amber-400" />
+              {company.phoneDisplay}
+            </a>
+            <p className="mt-2 flex items-center gap-2 text-sm">
+              <MapPin className="h-4 w-4 text-amber-400" />
+              {company.area}
+            </p>
+          </div>
+
+          {/* Nav rapide */}
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-zinc-500">Navigation</p>
+            <nav className="mt-2 flex flex-col gap-1 text-sm">
+              {[
+                { href: "#prestations", label: "Prestations" },
+                { href: "#apropos", label: "À propos" },
+                { href: "#contact", label: "Contact" },
+              ].map((l) => (
+                <a key={l.href} href={l.href} className="text-zinc-400 hover:text-white transition-colors">
+                  {l.label}
+                </a>
+              ))}
+            </nav>
+          </div>
         </div>
-        <div className="text-sm">
-          <p>
-            Téléphone: <a href={`tel:${company.phoneRaw}`}>{company.phoneDisplay}</a>
-          </p>
-          <p className="mt-1 text-zinc-500">Site vitrine de présentation</p>
-        </div>
+
+        <p className="mt-6 text-center text-xs text-zinc-600">
+          Site vitrine de présentation &mdash; {new Date().getFullYear()}
+        </p>
       </div>
     </footer>
   );
