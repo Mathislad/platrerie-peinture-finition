@@ -4,6 +4,7 @@ import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { ReassuranceSection } from "@/components/reassurance-section";
+import { ReviewsSection } from "@/components/reviews-section";
 import { ServicesSection } from "@/components/services-section";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <ServicesSection />
         <AboutSection />
         <ReassuranceSection />
+        <ReviewsSection />
         <ContactSection />
       </main>
       <Footer />
