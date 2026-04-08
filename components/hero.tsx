@@ -29,7 +29,7 @@ export function Hero() {
             Des finitions propres et durables pour vos travaux intérieurs
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-zinc-200 sm:text-lg">
-            Entreprise locale à Vals-près-le-Puy. Accompagnement en plâtrerie, peinture et finition,
+            Entreprise locale au Puy-en-Velay et ses alentours. Accompagnement en plâtrerie, peinture et finition,
             en neuf comme en rénovation, avec un objectif simple&nbsp;: un résultat net et soigné.
           </p>
 

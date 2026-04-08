@@ -8,9 +8,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "PLATRERIE-PEINTURE,FINITION | Vals-près-le-Puy",
+  title: "PLATRERIE-PEINTURE,FINITION | Le Puy-en-Velay",
   description:
-    "Entreprise locale de plâtrerie, peinture et finition à Vals-près-le-Puy et Le Puy-en-Velay.",
+    "Entreprise locale de plâtrerie, peinture et finition à Le Puy-en-Velay et ses alentours.",
 };
 
 export default function RootLayout({

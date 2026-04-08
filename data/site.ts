@@ -4,7 +4,7 @@ export const company = {
   name: "PLATRERIE-PEINTURE,FINITION",
   phoneRaw: "0620385685",
   phoneDisplay: "06 20 38 56 85",
-  area: "Vals-près-le-Puy · Le Puy-en-Velay et alentours",
+  area: "Le Puy-en-Velay et ses alentours",
   address: "43 Rue Léon et Jeanne Coudeyrette",
   city: "43000 Le Puy-en-Velay",
   country: "France",
