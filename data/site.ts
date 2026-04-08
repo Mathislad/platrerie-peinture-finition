@@ -5,6 +5,11 @@ export const company = {
   phoneRaw: "0620385685",
   phoneDisplay: "06 20 38 56 85",
   area: "Vals-près-le-Puy · Le Puy-en-Velay et alentours",
+  address: "43 Rue Léon et Jeanne Coudeyrette",
+  city: "43000 Le Puy-en-Velay",
+  country: "France",
+  addressFull: "43 Rue Léon et Jeanne Coudeyrette, 43000 Le Puy-en-Velay, France",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=43+Rue+L%C3%A9on+et+Jeanne+Coudeyrette+43000+Le+Puy-en-Velay+France",
 };
 
 export const reassuranceItems = [

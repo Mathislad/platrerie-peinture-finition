@@ -18,10 +18,19 @@ export function ContactSection() {
               <Phone className="h-5 w-5 text-amber-400" />
               {company.phoneDisplay}
             </a>
-            <p className="flex items-center gap-2 text-sm text-zinc-400">
-              <MapPin className="h-4 w-4 text-zinc-500" />
-              {company.area}
-            </p>
+            <a
+              href={company.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-2 text-sm text-zinc-400 hover:text-zinc-200 transition-colors"
+            >
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-amber-400" />
+              <span>
+                {company.address}<br />
+                {company.city}<br />
+                {company.country}
+              </span>
+            </a>
           </div>
 
           <a

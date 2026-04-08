@@ -23,10 +23,18 @@ export function Footer() {
               <Phone className="h-4 w-4 text-amber-400" />
               {company.phoneDisplay}
             </a>
-            <p className="mt-2 flex items-center gap-2 text-sm">
-              <MapPin className="h-4 w-4 text-amber-400" />
-              {company.area}
-            </p>
+            <a
+              href={company.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 flex items-start gap-2 text-sm text-zinc-400 hover:text-zinc-200 transition-colors"
+            >
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-amber-400" />
+              <span>
+                {company.address}<br />
+                {company.city}
+              </span>
+            </a>
           </div>
 
           {/* Nav rapide */}
